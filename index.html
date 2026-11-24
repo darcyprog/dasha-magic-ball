@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#040713">
+  <meta name="description" content="Магический шар предсказаний Даши — задай вопрос и узнай, что подскажет судьба.">
+  <title>Магический шар предсказаний Даши ✦</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="cosmos" aria-hidden="true">
+    <div class="nebula nebula-one"></div>
+    <div class="nebula nebula-two"></div>
+    <div class="nebula nebula-three"></div>
+    <div class="stars stars-far" id="starsFar"></div>
+    <div class="stars stars-near" id="starsNear"></div>
+    <div class="shooting-stars" id="shootingStars"></div>
+    <div class="cosmic-grain"></div>
+  </div>
+
+  <main class="experience">
+    <header class="hero">
+      <p class="eyebrow"><span class="eyebrow-line"></span> ТАЙНЫ ВСЕЛЕННОЙ <span class="eyebrow-line"></span></p>
+      <h1>Магический шар <em>предсказаний Даши</em></h1>
+      <p class="motto">«Если он так скажет, так и будет…»</p>
+      <p class="intro">Закрой глаза, загадай свой вопрос и доверь его звёздам.</p>
+    </header>
+
+    <section class="magic-space" aria-label="Магический шар предсказаний">
+      <div class="orbit orbit-one" aria-hidden="true"></div>
+      <div class="orbit orbit-two" aria-hidden="true"></div>
+      <div class="orbit orbit-three" aria-hidden="true"></div>
+      <span class="orbit-spark orbit-spark-one" aria-hidden="true">✧</span>
+      <span class="orbit-spark orbit-spark-two" aria-hidden="true">✦</span>
+      <span class="orbit-spark orbit-spark-three" aria-hidden="true">✧</span>
+      <div class="ball-glow" aria-hidden="true"></div>
+      <button class="magic-ball" id="magicBall" type="button" aria-label="Нажми, чтобы получить предсказание">
+        <span class="ball-shine" aria-hidden="true"></span>
+        <span class="ball-rim" aria-hidden="true"></span>
+        <span class="ball-center" aria-hidden="true">
+          <span class="ball-symbol" id="ballSymbol">✦</span>
+          <span class="ball-answer" id="ballAnswer" aria-live="polite"></span>
+        </span>
+      </button>
+      <div class="ball-shadow" aria-hidden="true"></div>
+    </section>
+
+    <div class="interaction">
+      <p class="hint" id="hint">Нажми на шар — и он откроет тебе ответ</p>
+      <button class="ask-button" id="askButton" type="button"><span>✧</span> Узнать предсказание <span>✧</span></button>
+      <p class="small-note">Здесь нет неправильных вопросов — только немного магии.</p>
+    </div>
+
+    <section class="fortune-card" id="fortuneCard" aria-label="Памятка от судьбы" aria-live="polite" hidden>
+      <span class="card-spark" aria-hidden="true">✧</span>
+      <p class="card-label">ПОСЛАНИЕ ОТ ВСЕЛЕННОЙ</p>
+      <h2 class="card-title" id="cardTitle"></h2>
+      <p class="card-message" id="cardMessage"></p>
+      <span class="card-footer">✦ &nbsp; только для тебя &nbsp; ✦</span>
+    </section>
+
+    <footer>✧ &nbsp; Создано для тех, кто верит в чудеса &nbsp; ✧</footer>
+  </main>
+</body>
+</html>
